@@ -51,7 +51,7 @@ mkdir -p /mnt/ls15
 mkdir -p /opt/software
 
 ################################################################################
-# Run the user's login shell, or a user specified command
+# Run the user's login shell, or a user specified command 
 ################################################################################
 %runscript
 SHELL="$(getent passwd $USER | awk -F: '{print $NF}')"
